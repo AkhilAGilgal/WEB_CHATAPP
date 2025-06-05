@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Chat App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'var(--primary-color, #3B82F6)', // Example primary color (blue-500)
+            secondary: 'var(--secondary-color, #10B981)', // Example secondary color (emerald-500)
+            background: 'var(--background-color, #F3F4F6)', // Example background (gray-100)
+            card: 'var(--card-color, #FFFFFF)', // Example card background (white)
+            textPrimary: 'var(--text-primary-color, #1F2937)', // Example text (gray-800)
+            textSecondary: 'var(--text-secondary-color, #4B5563)', // Example text (gray-600)
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-background text-textPrimary">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
