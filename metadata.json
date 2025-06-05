@@ -1,0 +1,5 @@
+{
+  "name": "React Multi-Room Chat",
+  "description": "A multi-room chat application built with React, TypeScript, and Tailwind CSS. It features user login, room creation, room selection, and real-time (mocked) messaging.",
+  "requestFramePermissions": []
+}
